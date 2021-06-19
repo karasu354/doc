@@ -1,6 +1,6 @@
 # github
 
-[一覧に戻る](./README.md)
+[手順書一覧に戻る](./README.md)
 
 ## `git`のインストール
 ```
@@ -19,5 +19,44 @@ $ git config --list
 ```
 #!/bin/bash
 git config --global user.name  "userName"
-git config --global user.email "username@exmaple.com"
+git config --global user.email "username@example.com"
+```
+
+## 管理したいフォルダでの設定
+```
+$ git init
+$ git add .
+$ git commit -m "init"
+$ git remote add add origin https://github.com/hoge/hoge.git
+```
+
+## GitHubのリポジトリで管理する方法(Deploy Key)
+SSH-keyの生成
+```
+$ ssh-keygen
+$ ls -al ~/.ssh
+$ ssh-add -l
+```
+リポジトリ内でSetting->Deploy keys->Add deploy keyで上で生成した公開鍵を登録する
+
+公開鍵は以下のコマンドで確認する
+```
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa .....=user@user
+```
+鍵を登録するさいにAllow write accessの項目があるが`push`を使用するならチェックを入れる
+
+以下のコマンドで接続を確認する
+```
+$ ssh -T git@github.com
+```
+
+## GitHubへPushする
+```
+$ git push origin master
+```
+
+## GitHubからPullする
+```
+$ git pull origin master
 ```

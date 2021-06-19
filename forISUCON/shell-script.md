@@ -1,6 +1,6 @@
 # shell script
 
-[一覧に戻る](./README.md)
+[手順書一覧に戻る](./README.md)
 
 ## 実行について
 `script.sh`を実行したいとき
