@@ -27,7 +27,6 @@ git config --global user.email "username@example.com"
 $ git init
 $ git add .
 $ git commit -m "init"
-$ git remote add add origin https://github.com/hoge/hoge.git
 ```
 
 ## GitHubのリポジトリで管理する方法(Deploy Key)
@@ -49,6 +48,11 @@ ssh-rsa .....=user@user
 以下のコマンドで接続を確認する
 ```
 $ ssh -T git@github.com
+```
+
+## GitHubのリポジトリを登録
+```
+$ git remote add add origin https://github.com/hoge/hoge.git
 ```
 
 ## GitHubへPushする
