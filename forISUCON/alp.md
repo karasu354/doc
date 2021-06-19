@@ -49,6 +49,8 @@ http {
   ...
 }
 ```
+(`access_log  /var/log/nginx/access.log ltsv;`を入れるかどうかわからない。いれたら実行したときにちゃんと出力される)
+
 アクセスログファイルの削除と設定を反映するためにnginxをリロード
 ```
 $ sudo rm /var/log/nginx/access.log && sudo systemctl reload nginx
