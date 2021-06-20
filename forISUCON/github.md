@@ -14,7 +14,7 @@ $ git config --list
 (初期は何も設定しないから出ない)
 ```
 
-## 最初の設定
+## 最初の設定 (未完成)
 次のようなシェルスクリプトを作り実行する
 ```
 #!/bin/bash
@@ -48,13 +48,18 @@ ssh-rsa .....=user@user
 以下のコマンドで接続を確認する
 ```
 $ ssh -T git@github.com
+Hi hoge/hoge! You've successfully authenticated, but GitHub does not provide shell access.
 ```
-
+成功すると上のように表示される
 ## GitHubのリポジトリを登録
+SSHの方で登録
 ```
-$ git remote add add origin https://github.com/hoge/hoge.git
+$ git remote add origin git@github.com:hoge/hoge.git
 ```
-
+HTTPSの方で間違えて登録した場合は以下の方法で変える
+```
+$ git remote set-url origin git@github.com:hoge/hoge.git
+```
 ## GitHubへPushする
 ```
 $ git push origin master
