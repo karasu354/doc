@@ -10,3 +10,4 @@ OS : Ubuntu 20.04.02 LTS
 - [shell script関係](./shell-script.md)
 - [nginx関係](./nginx.md)
 - [alp関係](./alp.md)
+- [redis関係](./redis.md)

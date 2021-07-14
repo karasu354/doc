@@ -2,6 +2,9 @@
 
 [手順書一覧に戻る](./README.md)
 
+## alpとは
+alpはアクセスログ解析ツール
+
 ## alpインストール
 ```
 $ wget https://github.com/tkuchiki/alp/releases/download/v1.0.3/alp_linux_amd64.zip
