@@ -30,6 +30,11 @@ $ sudo mysql
 mysql> show variables like 'slow%';
 ```
 
+もし，このとき，`slow_query_log` がOFFな場合は，以下の点を確認する．
+- `slow_query_log_file` に指定したファイルにmysqlがアクセス不可（権限・ファイルの存在）であるかどうか
+
+↑な場合は **自動的にOFFになる** ので，ハマりポイント
+
 ## ログ解析
 `mysqldumpslow`コマンド
 ```
