@@ -1,11 +1,22 @@
 {
-  "python.venvPath": "${workspaceFolder}/venv",
-  "python.linting.mypyEnabled": true,
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.insertSpaces": true
+  },
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "python.venvPath": "${workspaceFolder}/.venv",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
   "python.linting.enabled": true,
+  "python.linting.mypyEnabled": true,
   "python.linting.mypyArgs": [
       "--ignore-missing-imports",
       "--follow-imports=silent",
       "--show-column-numbers",
       "--check-untyped-defs"
-  ]
+  ],
+  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort"
 }
