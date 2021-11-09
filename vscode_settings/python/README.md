@@ -47,5 +47,8 @@ pip install isort
 | [python.sortImports] |||
 | path | sortimportsへのpath ||
 
+# 注意
+windowsだと`.venv/bin`ではなく`.venv/Scripts`下に実行ファイルがあるためpathの設定では`Scripts`に変更すること
+
 ## 備考
 [mypyのコマンドライン](https://qiita.com/keng000/items/8e55e3cfdba888fba290)
