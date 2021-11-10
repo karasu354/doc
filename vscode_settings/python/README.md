@@ -1,4 +1,4 @@
-# python
+# Python
 仮想環境
 ```sh
 python -m venv .venv
@@ -19,6 +19,7 @@ import sorter `isort`
 pip install isort
 ```
 
+## .vscode/settings.json
 
 | 設定名 | 機能 | コマンド |
 | ---- | ---- | ---- |
