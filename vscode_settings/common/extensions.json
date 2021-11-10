@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "oderwat.indent-rainbow",
+    "pkief.material-icon-theme",
+    "mosapride.zenkaku",
+    "shardulm94.trailing-spaces",
+    "github.github-vscode-theme",
+    "coenraads.bracket-pair-colorizer-2"
+  ]
+}
