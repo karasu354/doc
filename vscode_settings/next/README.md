@@ -51,6 +51,11 @@ npm i -D typescript @types/node @types/react
 | 設定名 | 機能 | リンクなど |
 | ---- | ---- | ---- |
 ||||
+### parser
+parserの指定
+| 設定名 | 機能 | リンクなど |
+| ---- | ---- | ---- |
+| @typescript-eslint/parser |||
 ### parserOptions
 | 設定名 | 機能 | リンクなど |
 | ---- | ---- | ---- |
