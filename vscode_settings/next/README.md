@@ -66,6 +66,8 @@ parserの指定
 静的検証の前提条件を設定
 | 設定名 | 機能 | リンクなど |
 | ---- | ---- | ---- |
+| browser | ブラウザのglobal変数 ||
+| node | Node.jsのglobal変数とNone.jsのscoping||
 | es6 | モジュールを除くすべてのES6機能を有効 ||
 ### globals
 スクリプトが実行中にアクセスする追加のglobal変数
