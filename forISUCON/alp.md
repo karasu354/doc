@@ -81,3 +81,16 @@ alp ltsv --file=/var/log/nginx/access.log
 ```bash
 cat /var/log/nginx/access.log | alp ltsv
 ```
+
+## アクセスログのオプション
+```bash
+cat /var/log/nginx/access.log | alp ltsv\
+-m "image/[0-9]+"\
+--sort=count -r
+```
+
+- `-m` URIをまとめる
+- `-sort` [count|avg|etc...]でソートする
+- `-r` 降順にソート
+
+詳しくは、https://github.com/tkuchiki/alp
