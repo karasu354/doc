@@ -73,20 +73,20 @@ sudo rm /var/log/nginx/access.log && sudo systemctl reload nginx
 ## アクセスログの確認方法
 
 ```bash
-alp ltsv --file=/var/log/nginx/access.log
+sudo alp ltsv --file=/var/log/nginx/access.log
 ```
 
 もしくは
 
 ```bash
-cat /var/log/nginx/access.log | alp ltsv
+sudo cat /var/log/nginx/access.log | alp ltsv
 ```
 
 ## アクセスログのオプション
 ```bash
-cat /var/log/nginx/access.log | alp ltsv\
--m "image/[0-9]+"\
---sort=count -r
+sudo cat /var/log/nginx/access.log | alp ltsv \
+-m "/image/[0-9]+" \
+--sort=avg -r
 ```
 
 - `-m` URIをまとめる
