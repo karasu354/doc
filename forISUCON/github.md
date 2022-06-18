@@ -69,3 +69,18 @@ $ git push origin master
 ```
 $ git pull origin master
 ```
+
+## Mysql, Nginxのconfをシンボリックリンクに置き換える
+````console
+#!/bin/bash
+mkdir ~/hoge/etc
+sudo cp -r /etc/nginx ~/hoge/etc/
+sudo systemctl stop nginx
+ln -sv /home/${USER}/nginx /etc/nginx
+sudo systemctl restart nginx
+
+sudo cp -r /etc/mysql ~/hoge/etc/
+sudo systemctl stop mysql
+ln -sv /home/${USER}/mysql /etc/mysql
+sudo systemctl restart mysql
+```
